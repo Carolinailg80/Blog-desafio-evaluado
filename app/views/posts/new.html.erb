@@ -1,0 +1,16 @@
+<h1>Crear un nuevo post</h1>
+
+<%= form_with() do |f| %>
+
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+
+  <%= f.label :content %>
+  <%= f.text_field :content %>
+
+  <%= f.label :image_url %>
+  <%= f.text_field :image_url %>
+  
+  <%= f.submit "Crear Post" %>
+
+<% end %>
